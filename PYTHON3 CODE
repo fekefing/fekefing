@@ -1,0 +1,52 @@
+#site kayıt
+print('Sitemize hoşgeldiniz.'.upper())
+while True:
+    print('kayıt olmak istermisiniz:(e/h)'.upper())
+    cevap=input()
+    if (cevap=='E'):
+        print('Lütfen bekleyiniz...')
+
+        isim=input('Kullanıcı adınızı yazınız:')
+        şifre=input('Şifrenizi yazınız:')
+        tk=input('Şifrenizi tekrar giriniz:')
+        if (tk==şifre):
+            print('kayıt oluşturuldu'.upper())
+            print('Giriş sayfasına hoşgeldiniz...'.upper())
+            kull = input('Kullanıcı adınız:')
+            şiff = input('Şifreniz:')
+            if (kull == isim) and (şifre == şiff):
+                print('Hoşgeldiniz SAYIN'.upper(), isim)
+
+            else:
+                print('kullanıcı bulunamadı...'.upper())
+                continue
+            print('Baht ölçme programına hoşgeldiniz...'.upper())
+            print('Lütfen soruları gerçekçi biçimde cevaplayınız...Size uygun puanları yazınız...'.upper())
+            while (True):
+                a = int(input('Kaç yaşındasınız?:'))
+                b = int(input('Ailenizde kaç kişi var?:'))
+                c = int(input('Yaşam standartlarınız nasıl?(Kötü:5,İyi:3,Çok iyi:1):'))
+                d = int(input('Mesleğiniz nedir?(Devlet memuru:5,Serbest meslek:5,Özel sektör:5,Diğer:4):'))
+                e = int(input('(Evli(En az 5 sene):5,Evlenmek üzere:10,Tek tabanca:2):'))
+
+                top = int(a) + int(b) + int(c) + int(d) + int(e)
+                if (top >= 40):
+                    print('tebrikler Bahtı bitik piyade...'.upper())
+                elif (top >= 30):
+                    print('Bahtınız yavaştan kapanıyor...')
+                elif (top >= 26):
+                    print('Good luck...')
+                else:
+                    print('DEVAMKEE')
+                break
+
+
+        elif(tk!=şifre):
+            print('şifreler uyuşmuyor tekrar deneyin'.upper())
+        else:
+            print()
+
+
+    elif (cevap=='H'):
+        print('çıkış yapılıyor'.upper())
+        break

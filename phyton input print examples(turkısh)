@@ -1,0 +1,13 @@
+print('Oyuncu kaydetme programı...')
+
+a=input('Oyuncunun adı:')
+b=input('Oyuncunun soyadı:')
+c=input('Oyuncunun oynadığı takım:')
+
+bilgiler=[a,b,c]
+
+print('Kaydediliyor...')
+
+print('\nAdı:{} \nSoyadı:{} \nTakımı:{}'.format(bilgiler[0],bilgiler[1],bilgiler[2]).upper())
+
+print('Kaydedildi...')

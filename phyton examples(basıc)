@@ -1,0 +1,30 @@
+name='fekef software'
+#print(len(name))
+
+#print(name[0])
+#print(name[0:6])
+
+#print(name.title())__Big Title
+#print(name.upper())__All character upper
+#print(name.lower())__lower
+#print(name.count('f'))__how many 'f'
+#print(name.find('f'))__where is f find it
+#print(name.replace('software','sex'))__change software
+#print(dir(name))__
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+x=17
+print(type(x))
+
+a=15.6
+print(type(a))
+
+#matematiksel işlemler
+#Toplama:5+3
+#Çıkarma:5-3
+#Çarpma:5*3
+#Bölme:6/4
+#Tam bölme:5//3
+#Üs alma:5**3
+#Mod:5%3=====Kalan
+print(5*3)
+print(type(6/4))
